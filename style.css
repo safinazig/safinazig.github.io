@@ -20,3 +20,23 @@ p {
     color: #94a3b8; /* Soft grey text */
     font-size: 1.2rem;
 }
+
+/* This styles the button */
+.contact-btn {
+    display: inline-block;
+    background-color: #38bdf8; /* Light blue background */
+    color: #0f172a; /* Navy blue text */
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none; /* Removes the underline */
+    border-radius: 50px; /* Makes the edges perfectly round */
+    margin-top: 20px;
+    transition: 0.3s; /* Makes the hover effect smooth */
+}
+
+/* This changes the button color when you hover your mouse over it */
+.contact-btn:hover {
+    background-color: #f8fafc; /* Turns white on hover */
+    transform: scale(1.05); /* Makes the button pop out slightly */
+}
