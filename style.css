@@ -1,0 +1,22 @@
+/* This designs the overall page layout */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0f172a; /* Sleek dark blue/grey background */
+    color: #f8fafc; /* Crisp white text */
+    text-align: center;
+    padding: 50px 20px;
+    margin: 0;
+}
+
+/* This designs your main headline */
+h1 {
+    color: #38bdf8; /* Bright electric blue color */
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+/* This designs your paragraph text */
+p {
+    color: #94a3b8; /* Soft grey text */
+    font-size: 1.2rem;
+}
