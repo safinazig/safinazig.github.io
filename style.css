@@ -90,14 +90,21 @@ p {
     border-color: #38bdf8;
 }
 
-/* Removes the underline from the text inside the card link */
+/* Removes the underline from the card link and resets text colors */
 .card-link {
-    text-decoration: none;
-    display: block; /* Makes the entire box area clickable, not just the text */
+    text-decoration: none !important; /* The !important tag forces the browser to obey */
+    display: block; 
     height: 100%;
 }
 
-/* Forces the text inside the link to keep its original styles */
-.card-link h3, .card-link p {
-    margin: 0;
+/* This guarantees that headers inside the link stay light blue */
+.card-link h3 {
+    color: #38bdf8 !important;
+    text-decoration: none !important;
+}
+
+/* This guarantees that paragraphs inside the link stay soft grey */
+.card-link p {
+    color: #94a3b8 !important;
+    text-decoration: none !important;
 }
