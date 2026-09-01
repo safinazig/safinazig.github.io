@@ -8,6 +8,19 @@
 </head>
 <body>
 
+    <!-- THE NAVIGATION MENU -->
+<div class="menu-container">
+    <!-- The Clickable 3-Dots Button -->
+    <button class="menu-button" id="menuBtn">•••</button>
+    
+    <!-- The Hidden Dropdown Menu Links -->
+    <div class="dropdown-menu" id="dropdownMenu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="gallery.html">Gallery</a>
+    </div>
+</div>
+
     <h1>Hello, World! I am learning to code.</h1>
     <p>Welcome to my dream portfolio site built from scratch.</p>
 
@@ -33,6 +46,15 @@
             </div>
         </div>
     </section>
+
+    <script>
+    const menuBtn = document.getElementById('menuBtn');
+    const dropdownMenu = document.getElementById('dropdownMenu');
+
+    menuBtn.addEventListener('click', () => {
+        dropdownMenu.classList.toggle('show');
+    });
+</script>
 
 </body>
 </html>
