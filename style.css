@@ -89,3 +89,15 @@ p {
     transform: translateY(-5px);
     border-color: #38bdf8;
 }
+
+/* Removes the underline from the text inside the card link */
+.card-link {
+    text-decoration: none;
+    display: block; /* Makes the entire box area clickable, not just the text */
+    height: 100%;
+}
+
+/* Forces the text inside the link to keep its original styles */
+.card-link h3, .card-link p {
+    margin: 0;
+}
