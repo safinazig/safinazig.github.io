@@ -40,3 +40,52 @@ p {
     background-color: #f8fafc; /* Turns white on hover */
     transform: scale(1.05); /* Makes the button pop out slightly */
 }
+
+/* Container for the entire projects section */
+.projects-section {
+    max-width: 900px;
+    margin: 60px auto 0 auto;
+    padding: 20px;
+}
+
+.projects-section h2 {
+    color: #f8fafc;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+/* This creates a side-by-side layout box */
+.projects-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap; /* Makes it stack neatly on mobile screens */
+}
+
+/* Individual project card design */
+.project-card {
+    background-color: #1e293b; /* Slightly lighter navy blue than background */
+    border: 1px solid #334155;
+    padding: 25px;
+    border-radius: 12px;
+    flex: 1;
+    min-width: 280px; /* Prevents cards from getting too squished */
+    text-align: left; /* Aligns project text to the left */
+    transition: 0.3s;
+}
+
+.project-card h3 {
+    color: #38bdf8;
+    margin-top: 0;
+}
+
+.project-card p {
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+/* Makes the cards glow slightly when hovered */
+.project-card:hover {
+    transform: translateY(-5px);
+    border-color: #38bdf8;
+}
