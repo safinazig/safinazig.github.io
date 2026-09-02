@@ -168,3 +168,43 @@ p {
 .dropdown-menu.show {
     display: block;
 }
+
+/* Layout for the gallery grid */
+.gallery-grid {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+/* Individual media wrapper boxes */
+.gallery-item {
+    background-color: #1e293b;
+    border-radius: 12px;
+    overflow: hidden;
+    max-width: 400px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* This forces images to perfectly fit inside their boxes */
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* This forces videos to perfectly fit inside their boxes */
+.gallery-item video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Labels below your media */
+.media-caption {
+    padding: 15px;
+    margin: 0 !important;
+    font-size: 0.95rem;
+    color: #94a3b8 !important;
+}
