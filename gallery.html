@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- THE NAVIGATION MENU -->
+    <div class="menu-container">
+        <button class="menu-button" id="menuBtn">•••</button>
+        <div class="dropdown-menu" id="dropdownMenu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="gallery.html">Gallery</a>
+        </div>
+    </div>
+
+    <!-- GALLERY SECTION -->
+    <section style="margin-top: 80px;">
+        <h1>My Media Gallery</h1>
+        <p>A collection of my favorite photos and videos.</p>
+
+        <div class="gallery-grid">
+            
+            <!-- 📸 CODE FOR AN IMAGE -->
+            <div class="gallery-item">
+                <img src="https://picsum.photos" alt="Placeholder Photo">
+                <p class="media-caption">Sample Image from the Internet</p>
+            </div>
+
+            <!-- 🎬 CODE FOR A VIDEO -->
+            <div class="gallery-item">
+                <video controls muted poster="https://picsum.photos">
+                    <source src="https://w3schools.com" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p class="media-caption">Sample Self-Hosted Video</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- JAVASCRIPT FOR THE MENU -->
+    <script>
+        const menuBtn = document.getElementById('menuBtn');
+        const dropdownMenu = document.getElementById('dropdownMenu');
+        menuBtn.addEventListener('click', () => {
+            dropdownMenu.classList.toggle('show');
+        });
+    </script>
+
+</body>
+</html>
