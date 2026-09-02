@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - My Portfolio</title>
+    <!-- We link the exact same style sheet so the background and fonts match! -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- THE NAVIGATION MENU (Copy-pasted so you can navigate back home) -->
+    <div class="menu-container">
+        <button class="menu-button" id="menuBtn">•••</button>
+        <div class="dropdown-menu" id="dropdownMenu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="gallery.html">Gallery</a>
+        </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <section style="margin-top: 80px; text-align: left; max-width: 600px; margin-left: auto; margin-right: auto;">
+        <h1 style="text-align: center;">About Me</h1>
+        <p>This is my brand new second page built completely from scratch!</p>
+        <p>I started my coding journey with a random username and big dreams. Now, I am structuring multi-page web applications using HTML, CSS, and JavaScript.</p>
+        <p>Stay tuned as I continue to add more content here.</p>
+    </section>
+
+    <!-- JAVASCRIPT FOR THE MENU -->
+    <script>
+        const menuBtn = document.getElementById('menuBtn');
+        const dropdownMenu = document.getElementById('dropdownMenu');
+
+        menuBtn.addEventListener('click', () => {
+            dropdownMenu.classList.toggle('show');
+        });
+    </script>
+
+</body>
+</html>
